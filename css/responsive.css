@@ -41,6 +41,15 @@
     .extra-large-text {
         font-size: 26px;
     }
+    #hero-section-wrapper {
+        height: 750px;
+    }
+    .hero-section::before {
+        height: 750px;
+    }
+    .tradding-amount-count-section {
+        padding-top: 100px;
+    }
 }
 
 @media only screen and ( max-width:1400px) and (min-width:1080px) {
