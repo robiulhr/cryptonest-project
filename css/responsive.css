@@ -59,3 +59,10 @@
         padding-right: 10px !important;
     }
 }
+
+@media (min-width: 1400px) {
+    .swiper-section .r-col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
