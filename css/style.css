@@ -161,9 +161,10 @@ li.dropdown-item {
     display: block;
 }
 
-.nav-right-menu {}
-
-.nav-right-menu-item button {}
+.language-button-text-issue {
+    margin-left: -22px;
+    font-size: 15px;
+}
 
 
 /* -------- header seciton */

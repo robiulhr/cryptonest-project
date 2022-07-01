@@ -37,20 +37,55 @@ document.addEventListener("mouseover", (ele) => {
 
 
 // --------------- light dark theme switch ---------------
-
+let body = document.querySelector("body");
 let themeSwitchBtn = document.querySelector(".dark-light-changer-button button");
 let mobieimage = document.querySelector(".trade-anywhere-image-section img");
-themeSwitchBtn.addEventListener("click", (e) => {
-    document.querySelector("body").classList.toggle("dark-theme");
-    if (themeSwitchBtn.querySelector("i").classList.contains("fa-moon")) {
+
+
+if (!localStorage.getItem('themeStatus')) {
+    let themeStatus = { 'status': "light" };
+    localStorage.setItem('themeStatus', JSON.stringify(themeStatus));
+
+}
+
+function setThemeAsLocalStorage() {
+    let getThemeStatus = JSON.parse(localStorage.getItem('themeStatus'));
+    if (getThemeStatus.status == "light") {
+        body.classList.remove("dark-theme");
         themeSwitchBtn.querySelector("i").classList.add("fa-sun");
         themeSwitchBtn.querySelector("i").classList.remove("fa-moon");
-        mobieimage.src = "./assets/img/mobile-image-dark.png";
-
+        mobieimage.src = "./assets/img/mobile-image.png";
     } else {
         themeSwitchBtn.querySelector("i").classList.add("fa-moon");
         themeSwitchBtn.querySelector("i").classList.remove("fa-sun");
-        mobieimage.src = "./assets/img/mobile-image.png";
+        mobieimage.src = "./assets/img/mobile-image-dark.png";
+        body.classList.add("dark-theme");
 
     }
-})
+}
+document.addEventListener("DOMContentLoaded", (e) => {
+    setThemeAsLocalStorage();
+});
+
+function changeTheme() {
+    let getThemeStatus = JSON.parse(localStorage.getItem('themeStatus'));
+    if (getThemeStatus.status == "light") {
+        body.classList.add("dark-theme");
+        themeSwitchBtn.querySelector("i").classList.add("fa-moon");
+        themeSwitchBtn.querySelector("i").classList.remove("fa-sun");
+        mobieimage.src = "./assets/img/mobile-image-dark.png";
+        getThemeStatus.status = "dark"
+        localStorage.setItem('themeStatus', JSON.stringify(getThemeStatus));
+
+    } else {
+        themeSwitchBtn.querySelector("i").classList.add("fa-sun");
+        themeSwitchBtn.querySelector("i").classList.remove("fa-moon");
+        mobieimage.src = "./assets/img/mobile-image.png";
+        body.classList.remove("dark-theme");
+        getThemeStatus.status = "light"
+        localStorage.setItem('themeStatus', JSON.stringify(getThemeStatus));
+    }
+
+}
+
+themeSwitchBtn.addEventListener("click", (e) => changeTheme());
