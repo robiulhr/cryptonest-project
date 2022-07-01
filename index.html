@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -------------- aos plugin ------------- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- sedebar css -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+    <!-- ------------ side bar----------- -->
+    <div id="mySidenav" class="sidenav">
+        <ul class="list-unstyled">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li>
+                <a href="#">buy Cripto</a>
+
+            </li>
+            <li>
+                <a href="#">Services</a>
+
+            </li>
+            <li>
+                <a href="#">Clients</a>
+
+            </li>
+            <li>
+                <a href="#">Contact</a>
+
+            </li>
+            <li>
+                <a href="#">Download App</a>
+
+            </li>
+
+        </ul>
+
+    </div>
+    <!-- ----------- header ---------------- -->
+    <header class="position-absolute w-100">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col-7 col-xl-6">
+                        <div class="nav-left-side">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="nav-left-logo">
+                                        <a href="#" id="nav-logo">
+                                            <img src="./assets/img/logo.png" alt="logo">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-9 d-xl-flex align-items-center d-none">
+                                    <div class="nav-left-menu-wrapper pe-2 py-2">
+                                        <ul id="nav-left-menu" class="nav-left-menu d-flex justify-content-start align-items-center list-unstyled">
+                                            <li class="position-relative  nav-left-menu-item">
+                                                <a href="#" class="me-3">buy Cripto<i class="fas fa-caret-down ms-1"></i></a>
+                                                <div id="buyCripto-dropdown" class="top-40 left-menu-dropdown position-absolute bg-light">
+                                                    <ul class="dropdown p-2">
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="position-relative  nav-left-menu-item">
+                                                <a href="#" class="me-3">market</a>
+
+                                            </li>
+                                            <li class="position-relative  nav-left-menu-item">
+                                                <a href="#" class="me-3">Trades<i class="fas fa-caret-down ms-1"></i></a>
+                                                <div id="Trades-dropdown" class="top-40 left-menu-dropdown position-absolute bg-light">
+                                                    <ul class="dropdown p-2">
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="position-relative  nav-left-menu-item">
+                                                <a href="#" class="me-3">derivates<i class="fas fa-caret-down ms-1"></i></a>
+                                                <div id="Trades-dropdown" class="top-40 left-menu-dropdown position-absolute bg-light">
+                                                    <ul class="dropdown p-2">
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item p-2">
+                                                            <div class="row">
+                                                                <div class="col-3 d-flex align-items-center">
+                                                                    <img src="./assets/img/nav-item-img01.png" alt="">
+                                                                </div>
+                                                                <div class="col-7 d-flex align-items-start justify-content-center flex-column">
+                                                                    <h5 class="medium-text">Credit card</h5>
+                                                                    <p class="small-text">Buy cripto with credit card.</p>
+                                                                </div>
+                                                                <div class="col-2 d-flex align-items-center menu-item-arrow-div">
+                                                                    <i class="fas fa-long-arrow-alt-right text-info"></i>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-5 col-xl-6">
+
+                        <div class="nav-right-side">
+                            <div class="row">
+                                <div class="col-xl-9 d-xl-block d-none">
+                                    <div class="nav-right-menu">
+                                        <ul class="list-unstyled d-flex flex-row align-items-center ps-4 justify-content-end pt-4">
+                                            <li class="nav-right-menu-item  me-4 p-1">
+                                                <a href="" class="text-white">login</a>
+                                            </li>
+                                            <li class="nav-right-menu-item me-4 p-1">
+                                                <button class="btn btn-primary px-3 py-1">
+                                                    signup
+                                                </button>
+                                            </li>
+                                            <li class="d-none d-xl-block nav-right-menu-item me-4 p-1">
+                                                <a href="" class="text-white"> download</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-1 col-7 col-md-9 d-flex align-items-center justify-content-end justify-content-xl-start ">
+                                    <div class="dark-light-changer-button pt-xl-1 pt-4">
+                                        <button class="mt-2 bg-transparent"><i class="fas fa-moon text-white"></i></button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-flex align-items-center justify-content-end justify-content-xl-start">
+                                    <div class="pt-2">
+                                        <a href="" class="text-white">English | USD</a>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-md-3 d-xl-none d-flex align-items-center justify-content-end">
+                                    <div class="nav-toggle-button pt-xl-0 pt-4 m-1">
+                                        <button class="btn" onclick="openNav()"><i class="text-white large-text fas fa-bars"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <!-- ---------------- main ----------------------- -->
+    <main>
+        <!-- ---------------- hero section---------------- -->
+        <div id="hero-section-wrapper" class="">
+            <div class="hero-section w-100">
+                <div class="hero-section-content  container" data-aos="fade-up" data-aos-offset="300" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-center">
+                    <div class="row">
+                        <div class="col-12 col-xl-5 d-flex align-items-start justify-content-center flex-column px-5">
+                            <h1 class="text-white mb-3">Cryptonest</h1>
+                            <p class="large-text text-primary-color">The world's first all-in-one super app exchange</p>
+                            <button class="text-white btn btn-primary px-5 py-2 mt-4">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tradding-amount-count-section-wrapper container p-5">
+                    <div class="tradding-amount-count-section">
+                        <div class="row">
+                            <div class="col-3">
+                                <h5><span class="text-white">BTC/USDT</span> <span class="text-danger ms-2">-1.11%</span></h5>
+                                <h4 class="text-white">15633.44</h4>
+                                <h6 class="text-white">$233.43</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5><span class="text-white">BTC/USDT</span> <span class="text-danger ms-2">-1.11%</span></h5>
+                                <h4 class="text-white">15633.44</h4>
+                                <h6 class="text-white">$233.43</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5><span class="text-white">BTC/USDT</span> <span class="text-danger ms-2">-1.11%</span></h5>
+                                <h4 class="text-white">15633.44</h4>
+                                <h6 class="text-white">$233.43</h6>
+                            </div>
+                            <div class="col-3">
+                                <h5><span class="text-white">BTC/USDT</span> <span class="text-danger ms-2">-1.11%</span></h5>
+                                <h4 class="text-white">15633.44</h4>
+                                <h6 class="text-white">$233.43</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------- swiper section --------------- -->
+        <div class="swiper-section-wrapper">
+            <div class="container swiper-section p-5">
+                <div class=" row">
+                    <div class="col-12 col-md-6 col-xl-3 my-3 my-xl-0 d-flex align-items-center justify-content-center " data-aos="fade-up">
+                        <img src="./assets/img/swiper03.png" alt="">
+
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 my-3 my-xl-0 d-flex align-items-center justify-content-center" data-aos="fade-up">
+                        <img src="./assets/img/swiper02.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 my-3 my-xl-0 d-flex align-items-center justify-content-center" data-aos="fade-up">
+                        <img src="./assets/img/swiper03.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 my-3 my-xl-0 d-flex align-items-center justify-content-center" data-aos="fade-up">
+                        <img src="./assets/img/swiper04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------- pair section ----------------- -->
+        <div class="pair-section-wrapper container p-xl-5">
+            <div class="pair-section ">
+                <div class="pair-section-upper px-xl-5">
+                    <a href="" class="pair-section-upper-news-btn">News</a>
+                    <span class="p-2 theme-text-color small-text">/</span>
+                    <a href="" class="theme-text-color small-text">test</a>
+                </div>
+                <div class="pair-table-section-wraper p-xl-5">
+                    <div class="pair-title-section py-5">
+                        <h2 class="theme-text-color">Pair</h2>
+                    </div>
+                    <div class="pair-table-section">
+                        <table class="table pair-table table-borderless ">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-primary-color">Pair</th>
+                                    <th scope="col" class="text-primary-color">Last Price</th>
+                                    <th scope="col" class="text-primary-color">Change</th>
+                                    <th scope="col" class="text-primary-color">24H Vol</th>
+                                    <th scope="col" class="text-primary-color">Trade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="./assets/img/small-bitcoin.png" alt="">
+                                        <h3 class="m-2 large-text"><span class="theme-text-color">BTC </span><span class="text-primary-color"> USDT</span></h3>
+                                    </th>
+                                    <td class="text-primary-color">Mark</td>
+                                    <td class="text-primary-color">Otto</td>
+                                    <td class="text-primary-color">@mdo</td>
+                                    <td><button class="btn btn-success ">Trade</button></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="./assets/img/small-bitcoin.png" alt="">
+                                        <h3 class="m-2 large-text"><span class="theme-text-color">BTC </span><span class="text-primary-color"> USDT</span></h3>
+                                    </th>
+                                    <td class="text-primary-color">Mark</td>
+                                    <td class="text-primary-color">Otto</td>
+                                    <td class="text-primary-color">@mdo</td>
+                                    <td><button class="btn btn-success ">Trade</button></td>
+
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <img src="./assets/img/small-bitcoin.png" alt="">
+                                        <h3 class="m-2 large-text"><span class="theme-text-color">BTC </span><span class="text-primary-color"> USDT</span></h3>
+                                    </th>
+                                    <td class="text-primary-color">Mark</td>
+                                    <td class="text-primary-color">Otto</td>
+                                    <td class="text-primary-color">@mdo</td>
+                                    <td><button class="btn btn-success ">Trade</button></td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- --------------------- beginer guide -------------- -->
+        <div class="beginner-guide-section-wrapper container p-5">
+            <div class="beginner-guide-section">
+                <div class="beginner-guide-title-section pb-5">
+                    <h2 class="extra-large-text theme-text-color">Beginner's guide </h2>
+                    <p class="mideum-text theme-text-color">You can start learning about digital currency trading</p>
+                </div>
+                <div class="beginner-guide-content-seciton">
+                    <div class="row">
+                        <div class="col-12 col-xl-4" data-aos="fade-right">
+                            <div class="beginer-guide-content-image">
+                                <img src="./assets/img/saving.png" alt="">
+                            </div>
+                            <div class="beginer-guide-content-text">
+                                <p class="mideum-text theme-text-color py-3">Quickly understand fiat currency transactions </p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-xl-4" data-aos="fade-up">
+                            <div class="beginer-guide-content-image">
+                                <img src="./assets/img/numerical.png" alt="">
+                            </div>
+                            <div class="beginer-guide-content-text">
+                                <p class="mideum-text theme-text-color py-3">Quickly understand fiat currency transactions </p>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-4" data-aos="fade-left">
+                            <div class="beginer-guide-content-image">
+                                <img src="./assets/img/saving.png" alt="">
+                            </div>
+                            <div class="beginer-guide-content-text">
+                                <p class="mideum-text theme-text-color py-3">Quickly understand fiat currency transactions </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------- trade anywhere -------------------- -->
+        <div class="trade-anywhere-section-wrapper container  pt-5">
+            <div class="trade-anywhere-section">
+                <div class="row">
+                    <div class="col-12 col-xl-6" data-aos="fade-right">
+                        <div class="trade-anywhere-text-section">
+                            <div class="trade-anywhere-title-section py-1 px-5">
+                                <h2 class="theme-text-color extra-large-text">Trade anytime, anywhere </h2>
+                                <p class="medium-text theme-text-color"> Quality products for you </p>
+
+                            </div>
+                            <ul class="trade-anywhere-list p-5 list-unstyled">
+                                <li class="trade-anywhere-list-item ">
+                                    <div class="row">
+                                        <div class="col-xl-9 col-12">
+                                            <div class="row">
+                                                <div class="col-2 d-flex align-items-center">
+                                                    <i class="fas fa-check extra-large-text text-primary"></i>
+                                                </div>
+                                                <div class="col-10 d-flex align-items-start flex-column justify-content-center">
+                                                    <h3 class="medium-text theme-text-color">Lightning trading performance </h3>
+                                                    <p class="small-text theme-text-color py-2">Provide a variety of transaction type selection, order speed combination
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="trade-anywhere-list-item mt-2">
+                                    <div class="row">
+                                        <div class="col-xl-9 col-12">
+                                            <div class="row">
+                                                <div class="col-2 d-flex align-items-center">
+                                                    <i class="fas fa-check extra-large-text text-primary"></i>
+                                                </div>
+                                                <div class="col-10 d-flex align-items-start flex-column justify-content-center">
+                                                    <h3 class="medium-text theme-text-color">Lightning trading performance </h3>
+                                                    <p class="small-text theme-text-color py-2">Provide a variety of transaction type selection, order speed combination
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="trade-anywhere-list-item mt-2">
+                                    <div class="row">
+                                        <div class="col-xl-9 col-12">
+                                            <div class="row">
+                                                <div class="col-2 d-flex align-items-center">
+                                                    <i class="fas fa-check extra-large-text text-primary"></i>
+                                                </div>
+                                                <div class="col-10 d-flex align-items-start flex-column justify-content-center">
+                                                    <h3 class="medium-text theme-text-color">Lightning trading performance </h3>
+                                                    <p class="small-text theme-text-color py-2">Provide a variety of transaction type selection, order speed combination
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <div class="play-store-links-section w-100 px-5">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="apple-store-link w-100">
+                                            <a href="">
+                                                <img class="w-100" src="./assets/img/app-store.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="google-play-store-link w-100">
+                                            <a href="">
+                                                <img class="w-100" src="./assets/img/google-play.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 p-md-5 p-0 col-xl-6 mt-xl-0 mt-5 pt-5 pt-xl-0" data-aos="fade-left">
+                        <div class="trade-anywhere-image-section d-flex align-items-center justify-content-end px-5 position-relative">
+                            <img src="./assets/img/mobile-image.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- ------------------------- digital currency ---------------------- -->
+        <div class="digital-currency-journey-section-wrapper container py-5">
+            <div class="digital-currency-journey-title-section p-5">
+                <h2 class="theme-text-color extra-large-text">Start your digital currency journey </h2>
+            </div>
+            <div class="digital-currency-journey-section-content p-3" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-3 px-5 ">
+                        <div class="digital-currency-journey-image px-3 pb-5">
+                            <img src="assets/img/currency journey img01.svg" alt="">
+                        </div>
+                        <div class="digital-currency-journey-text p-2">
+                            <h5 class="medium-text theme-text-color">0 Handling Fees </h5>
+                            <p class="small-text theme-text-color">Use a variety of payment methods to trade digital currency, 0 handling fees, safe and fast
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 px-5 my-3 my-xl-0" data-aos="fade-up">
+                        <div class="digital-currency-journey-image px-3 pb-5">
+                            <img src="assets/img/currency journey img 02.svg" alt="">
+                        </div>
+                        <div class="digital-currency-journey-text p-2 my-3">
+                            <h5 class="medium-text theme-text-color">0 Handling Fees </h5>
+                            <p class="small-text theme-text-color">Use a variety of payment methods to trade digital currency, 0 handling fees, safe and fast
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 px-5" data-aos="fade-up">
+                        <div class="digital-currency-journey-image px-3 pb-5">
+                            <img src="assets/img/currency journey img 03.svg" alt="">
+                        </div>
+                        <div class="digital-currency-journey-text p-2 ">
+                            <h5 class="medium-text theme-text-color">0 Handling Fees </h5>
+                            <p class="small-text theme-text-color">Use a variety of payment methods to trade digital currency, 0 handling fees, safe and fast
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 px-5 my-xl-0 my-3" data-aos="fade-up">
+                        <div class="digital-currency-journey-image px-3 pb-5">
+                            <img src="assets/img/currency journey img 04.svg" alt="">
+                        </div>
+                        <div class="digital-currency-journey-text p-2">
+                            <h5 class="medium-text theme-text-color">0 Handling Fees </h5>
+                            <p class="small-text theme-text-color">Use a variety of payment methods to trade digital currency, 0 handling fees, safe and fast
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------- start trading --------------------- -->
+        <div class="start-trading-section-wrapper bg-danger">
+            <div class="start-trading-seciton p-5 d-flex align-items-center flex-column justify-content-center">
+                <h2 class="d-inline-block text-center m-2 pt-4 text-white">Want to Start trading right away? </h2>
+                <h6 class="d-inline-block text-center m-2 text-white">Register your account immediately and start trading. </h6>
+                <button class="btn btn-dark bg-black p-2 mt-5 mb-3">Register now<i class="fas fa-long-arrow-alt-right ms-5 me-3"></i> </button>
+            </div>
+        </div>
+        <!-- --------------------- footer ------------------------ -->
+        <footer>
+            <div class="footer-upper py-3 container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="fotter-upper-left">
+                            <div class="row">
+                                <div class="col-4 p-3">
+                                    <ul class="list-unstyled" data-aos="fade-up">
+                                        <li class="">Tools</li>
+                                        <li class="">
+                                            <a href="">Download App</a>
+                                        </li>
+                                        <li>
+                                            <a href="">API Docs </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Fees</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 p-3">
+                                    <ul class="list-unstyled" data-aos="fade-up">
+                                        <li class="">Service</li>
+                                        <li class="">
+                                            <a href="">Agreement</a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                            Token Listing
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Recruitment
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Ambassador
+
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 p-3">
+                                    <ul class="list-unstyled" data-aos="fade-up">
+                                        <li class="">Help</li>
+                                        <li class="">
+                                            <a href="">Agreement</a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                            Token Listing
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Recruitment
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Ambassador
+
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" col-md-4 col-12">
+                        <div class="fotter-upper-right p-3 d-flex align-items-center justify-content-center">
+                            <ul class="list-unstyled" data-aos="fade-left">
+                                <li class=""><img class="footer-logo" src="./assets/img/logo.png" alt=""></li>
+                                <li>
+                                    <ul class="list-unstyled d-flex flex-row">
+                                        <li><i class="large-text text-info m-2 fab fa-facebook"></i></li>
+                                        <i class="fab fa-twitter large-text m-2 text-info"></i>
+                                        <i class="fas fa-comment large-text m-2 text-info"></i>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        xinvestor@yy.com</a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        xinvestor@yy.com
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        xinvestor@yy.com
+
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower p-3">
+                <p class="small-text mt-2 text-white p-2 text-center">Copyright © 2022 xINVESTOR. All rights reserved</p>
+            </div>
+        </footer>
+    </main>
+    <!-- main script -->
+    <script src="js/main.js"></script>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- ------------- jquery ------------ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <!-- ----------- aos plugin --------------------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="72px" viewBox="0 0 80 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon1_night</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#2762FF" offset="0%"></stop>
+            <stop stop-color="#2762FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon1_night">
+            <rect id="矩形" fill="#F4F7FC" x="10.4585988" y="8.11594203" width="8.11594203" height="49.8550725"></rect>
+            <rect id="矩形备份-15" fill="#F4F7FC" x="60.3136712" y="8.11594203" width="8.11594203" height="49.8550725"></rect>
+            <polygon id="矩形备份-12" fill="#F4F7FC" transform="translate(39.444106, 10.973085) rotate(-90.000000) translate(-39.444106, -10.973085) " points="36.5869631 -18.0124224 42.3012489 -18.0124224 42.3012489 39.9585921 36.5869631 39.9585921"></polygon>
+            <polygon id="路径-39" fill="url(#linearGradient-1)" points="23.6693029 20.7484012 23.6693029 54.161091 0 71.6083369 0 0.334858374"></polygon>
+            <polygon id="路径-39备份" fill="url(#linearGradient-1)" transform="translate(67.486825, 35.971598) scale(-1, 1) translate(-67.486825, -35.971598) " points="79.3214768 20.7484012 79.3214768 54.161091 55.6521739 71.6083369 55.6521739 0.334858374"></polygon>
+            <rect id="矩形" fill="#F4F7FC" x="35.9658451" y="20.8695652" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-18" fill="#2A3657" x="47.560048" y="20.8695652" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-21" fill="#2A3657" x="24.3716422" y="20.8695652" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-16" fill="#F4F7FC" x="35.9658451" y="33.6231884" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-19" fill="#2A3657" x="47.560048" y="33.6231884" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-22" fill="#2A3657" x="24.3716422" y="33.6231884" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-17" fill="#F4F7FC" x="35.9658451" y="46.3768116" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-20" fill="#2A3657" x="47.560048" y="46.3768116" width="6.95652174" height="6.95652174"></rect>
+            <rect id="矩形备份-23" fill="#2A3657" x="24.3716422" y="46.3768116" width="6.95652174" height="6.95652174"></rect>
+        </g>
+    </g>
+</svg>
